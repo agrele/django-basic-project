@@ -45,7 +45,6 @@ MIDDLEWARE_CLASSES = [
 	'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
 	'django.contrib.messages.middleware.MessageMiddleware',
 	'django.middleware.clickjacking.XFrameOptionsMiddleware',
-	'_project.middleware.LoginRequiredMiddleware',
 ]
 
 
@@ -131,6 +130,7 @@ LOGIN_REDIRECT_URL = '/'
 from django.contrib import messages
 MESSAGE_TAGS = { messages.ERROR: 'danger' }
 
+APPEND_SLASH = True
 
 ##########################
 #  Settings localisables :
